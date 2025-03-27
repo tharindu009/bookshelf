@@ -1,0 +1,69 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genre": "Fiction",
+      "rating": 4.5,
+      "isRead": true
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genre": "Dystopian Fiction",
+      "rating": 4.7,
+      "isRead": true
+    },
+    {
+      "id": "3",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genre": "Fantasy",
+      "rating": 4.8,
+      "isRead": false
+    },
+    {
+      "id": "4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "genre": "Fiction",
+      "rating": 4.2,
+      "isRead": true
+    },
+    {
+      "id": "5",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genre": "Romance",
+      "rating": 4.4,
+      "isRead": false
+    }
+  ],
+  "collections": [
+    {
+      "id": "1",
+      "name": "Classics",
+      "description": "Classic literature must-reads",
+      "bookIds": ["1", "2", "4", "5"]
+    },
+    {
+      "id": "2",
+      "name": "Fantasy Worlds",
+      "description": "Magical stories and adventures",
+      "bookIds": ["3"]
+    },
+    {
+      "id": "3",
+      "name": "Reading List",
+      "description": "Books I want to read soon",
+      "bookIds": ["3", "5"]
+    }
+  ]
+}
