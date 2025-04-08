@@ -44,6 +44,15 @@
       "genre": "Romance",
       "rating": 4.4,
       "isRead": false
+    },
+    {
+      "id": "6",
+      "title": "Test Book Title",
+      "author": "Jane Doe",
+      "year": 1990,
+      "genre": "Romance",
+      "rating": 4.1,
+      "isRead": false
     }
   ],
   "collections": [
@@ -51,19 +60,29 @@
       "id": "1",
       "name": "Classics",
       "description": "Classic literature must-reads",
-      "bookIds": ["1", "2", "4", "5"]
+      "bookIds": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ]
     },
     {
       "id": "2",
       "name": "Fantasy Worlds",
       "description": "Magical stories and adventures",
-      "bookIds": ["3"]
+      "bookIds": [
+        "3"
+      ]
     },
     {
       "id": "3",
       "name": "Reading List",
       "description": "Books I want to read soon",
-      "bookIds": ["3", "5"]
+      "bookIds": [
+        "3",
+        "5"
+      ]
     }
   ]
 }
