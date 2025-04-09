@@ -1,7 +1,10 @@
 import React from 'react'
 import CollectionList from '../components/CollectionList'
 
-const books = () => {
+const Books = () => {
+
+console.log("Book Page");
+
   return (
     <div>
         <CollectionList/>
@@ -9,4 +12,4 @@ const books = () => {
   )
 }
 
-export default books
+export default Books

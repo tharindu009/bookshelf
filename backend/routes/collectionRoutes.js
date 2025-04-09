@@ -3,10 +3,9 @@ import collectionController from "../controllers/collectionController.js";
 
 const router = express.Router();
 
-// define some routes for book controller
+
 router.get("/", collectionController.getAllCollections);
 
-// implement the rest of the routes...
 
 // get a collection by id
 router.get("/:id", collectionController.getCollectionById);
