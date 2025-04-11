@@ -21,20 +21,20 @@ const bookController = {
         return res.status(404).json({ error: "Book not found" });
       }
       res.json(book);
-    } 
+    }
     catch (error) {
       console.error(error.mnessage);
       res.status(500).json({ error: error.message });
     }
   },
 
-// add a new book
-addBook: async function (req, res) {
+  // add a new book
+  addBook: async function (req, res) {
     try {
       //console.log(req.body);
       const newBook = await bookModel.addBook(req.body);
       res.status(201).json(newBook);
-    } 
+    }
     catch (error) {
       console.error(error.message);
       res.status(500).json({ error: error.message });
@@ -65,7 +65,7 @@ addBook: async function (req, res) {
       }
       res.json(deletedBook);
       console.log("Book Deleted");
-    } 
+    }
     catch (error) {
       console.error(error.message);
       res.status(500).json({ error: error.message });

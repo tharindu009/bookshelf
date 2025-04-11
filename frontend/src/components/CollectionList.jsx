@@ -35,12 +35,14 @@ const CollectionList = () => {
 
     return (
         <div className="d-flex flex-wrap justify-content-center p-3">
-            <button className={"btn btn-primary btn-sm rounded-pill me-2 mb-2"}>
+            <button className={"btn btn-primary btn-sm rounded-pill me-2 mb-2"}
+                onClick={() => { onCollectionClick(null) }}>
                 All
             </button>
             {
                 collections.map((item, index) => (
-                    <button key={index} className={"btn btn-primary btn-sm rounded-pill me-2 mb-2"}>
+                    <button key={index} className={"btn btn-primary btn-sm rounded-pill me-2 mb-2"}
+                        onClick={() => onCollectionClick(item.id)}>
                         {item.name}
                     </button>
                 ))
